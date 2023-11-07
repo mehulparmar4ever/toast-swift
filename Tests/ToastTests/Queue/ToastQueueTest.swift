@@ -29,9 +29,9 @@ final class ToastQueueTest: XCTestCase {
     }
     
     func test_whenEnqueuingMultipleToasts_sizeIsThree() throws {
-        let toast = Toast.text("Toast")
-        let toast2 = Toast.text("Toast")
-        let toast3 = Toast.text("Toast")
+        let toast = Toast.text("Toast 1")
+        let toast2 = Toast.text("Toast 2")
+        let toast3 = Toast.text("Toast 3")
         
         queue.enqueue([toast, toast2, toast3])
         
